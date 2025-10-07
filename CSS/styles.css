@@ -74,14 +74,18 @@ p {
     margin-bottom: 30px;
 }
 
-.clip3 {
-  background: linear-gradient(135deg, #0d9488, #60a5fa);
-  color: white;
-  padding: 3rem;
-  font-weight: 600;
-  font-size: 1.25rem;
-  clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
-  transition: clip-path 0.3s ease;
+.simple-shape {
+  width: 200px;
+  height: 200px;
+  background: teal;
+  clip-path: circle(50% at 50% 50%);
 }
 
+
+.triangle-shape {
+  width: 200px;
+  height: 200px;
+  background: orange;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
 
