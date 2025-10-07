@@ -73,3 +73,51 @@ p {
     position: relative;
     margin-bottom: 30px;
 }
+
+.playground {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  background: #e6ebea;   /* your brand neutral */
+}
+
+/* Circle crop */
+.clip1 {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  clip-path: circle(50% at 50% 50%);
+  transition: clip-path 0.3s ease;
+}
+.clip1:hover {
+  clip-path: circle(40% at 50% 50%);
+}
+
+/* Triangle crop */
+.clip2 {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  transition: clip-path 0.3s ease;
+}
+.clip2:hover {
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+/* Diagonal box */
+.clip3 {
+  background: linear-gradient(135deg, #0d9488, #60a5fa);
+  color: #fff;
+  padding: 3rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  transition: clip-path 0.3s ease;
+}
+.clip3:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
