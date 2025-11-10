@@ -1,3 +1,4 @@
+console.log("✅ form.js is loaded");
 console.clear(); 
 
 //mask phone number
