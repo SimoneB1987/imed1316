@@ -90,7 +90,8 @@ p {
 }
 
 .lottiefiles{
-background-color: lightgray;
-padding: 20ox;
+background-color: var(--primaryColor) !important;
+padding: 25px;
+color: #ffffff !important;
 
 }
