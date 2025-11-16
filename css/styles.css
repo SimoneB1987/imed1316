@@ -89,3 +89,8 @@ p {
   clip-path: polygon(50% 0, 0 100%, 100% 100%);
 }
 
+.lottiefiles{
+background-color: lightgray;
+padding: 20ox;
+
+}
