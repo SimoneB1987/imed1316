@@ -41,12 +41,11 @@ p {
 }
 
 .paragraph-one-img {
-    position: relative;
-    float: right;
-    max-width: 350px;
-    width: 100%;
-    height: auto;
-    padding-left: 15px;
+  width: 40%;       /* previously it was probably around 20–25% */
+  max-width: 350px; /* keeps it from getting TOO huge on large screens */
+  float: left;
+  margin-right: 20px;
+  border-radius: 8px; /* optional: looks nicer */
 }
 
 
