@@ -6,7 +6,14 @@
     background-color: rgba(255, 255, 255, 0.5);
     color: #000000 !important;
   }
-  
+  /* Reduce carousel height */
+.carousel-item img,
+.carousel-item video {
+  max-height: 400px;   /* try 350–450px to taste */
+  object-fit: cover;   /* keeps image from stretching */
+  width: 100%;
+}
+
 
 p {
     font-family: var(--fontFamily) !important;
