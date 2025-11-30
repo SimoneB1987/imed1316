@@ -100,4 +100,34 @@ margin-bottom: 40px;
   display: flex;
   align-items: center;
 }
+/* Tame the overall carousel height */
+#carouselExampleCaptions {
+  max-height: 320px;
+  overflow: hidden;
+}
+
+/* Make each slide match that height */
+#carouselExampleCaptions .carousel-item {
+  max-height: 320px;
+}
+
+/* Force images and video to respect the smaller height */
+#carouselExampleCaptions .carousel-item img,
+#carouselExampleCaptions .carousel-item video {
+  height: 320px !important;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Fix the video ratio box too */
+#carouselExampleCaptions .carousel-item .ratio {
+  height: 320px !important;
+}
+
+#carouselExampleCaptions .carousel-item .ratio video {
+  height: 100% !important;
+  width: 100%;
+  object-fit: cover;
+}
+
 
