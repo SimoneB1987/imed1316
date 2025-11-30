@@ -75,20 +75,6 @@ p {
     margin-bottom: 30px;
 }
 
-.simple-shape {
-  width: 200px;
-  height: 200px;
-  background: teal;
-  clip-path: circle(50% at 50% 50%);
-}
-
-
-.triangle-shape {
-  width: 200px;
-  height: 200px;
-  background: orange;
-  clip-path: polygon(50% 0, 0 100%, 100% 100%);
-}
 
 .lottiefiles{
 background-color: var(--primaryColor) !important;
@@ -100,4 +86,10 @@ margin-bottom: 40px;
 .lottiefiles .row {
   display: flex;
   align-items: center;
+}
+
+.welcome-img {
+  max-width: 400px;   /* good size on desktop */
+  width: 100%;        /* fill its column */
+  border-radius: 8px; /* optional: makes it look nicer */
 }
