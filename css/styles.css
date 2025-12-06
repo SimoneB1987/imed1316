@@ -1,6 +1,13 @@
 @import 'global.css';
 @import 'main.css';
 
+.page-title {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;     /* adjust if you want smaller/bigger */
+  font-weight: 700;
+}
 
 .carousel-caption {
     background-color: rgba(255, 255, 255, 0.5);
