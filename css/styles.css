@@ -10,10 +10,11 @@
 }
 
 .carousel-caption {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #000000 !important;
-  }
-  /* Reduce carousel height */
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000 !important;
+}
+
+/* Reduce carousel height */
 .carousel-item img,
 .carousel-item video {
   max-height: 400px;   /* try 350–450px to taste */
@@ -21,37 +22,32 @@
   width: 100%;
 }
 
-
 p {
-    font-family: var(--fontFamily) !important;
+  font-family: var(--fontFamily) !important;
 }
 
 .blinn-fa-icon {
-    font-size: 60px;
-    color: #ffffff;
+  font-size: 60px;
+  color: #ffffff;
 }
 
-
-
 .blinn-fa-icon:hover {
-    transform: scale(1.1);
-  }
-  
-
+  transform: scale(1.1);
+}
 
 .blinn-fa-container a {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 .blinn-fa-container {
-    background-color: var(--secondaryColor) !important;
-    padding: 50px;
+  background-color: var(--secondaryColor) !important;
+  padding: 50px;
 }
 
 .paragraph-one {
-    position: relative;
-    margin-top: -80px;
-    font-family: var(--fontFamily) !important;
+  position: relative;
+  margin-top: -80px;
+  font-family: var(--fontFamily) !important;
 }
 
 .welcome-img {
@@ -67,48 +63,46 @@ img[src*="paragraph-one.jpg"] {
   height: auto !important;
 }
 
-
-
+/* Clip-path band */
 #custom-clip-path {
-    width: 100%;
-    height: 280px;
-    background-color: var(--secondaryColor) !important;
-    clip-path: polygon(0 0, 0 30%, 100% 0);
-    position: relative;
-    margin-top: -5px;
+  width: 100%;
+  height: 280px;
+  background-color: var(--secondaryColor) !important;
+  clip-path: polygon(0 0, 0 30%, 100% 0);
+  position: relative;
+  margin-top: -5px;
 }
 
+/* Testimonial headshots */
 .cropped {
-    width: 250px;
-    height: 250px;
-    margin-top: 15px;
-    border: 10px solid var(--accentColor) !important;
-    border-radius: 50%;
-    border: 8px solid #2f3992
-    clip-path: circle(50% at 50% 50%);
-    
+  width: 250px;
+  height: 250px;
+  margin-top: 15px;
+  border: 10px solid var(--accentColor) !important;
+  border-radius: 50%;
+  border: 8px solid #2f3992;
+  clip-path: circle(50% at 50% 50%);
 }
 
-
-.headshots blockquote {
-  color: #111827;  /* dark, accessible text */
-  font-style: normal; /* optional — easier to read than italic */
+/* Make testimonial text dark for contrast */
+.headshots blockquote,
+.headshots blockquote p,
+.headshots blockquote cite {
+  color: #111827 !important;  /* dark, accessible text */
+  font-style: normal;
 }
 
 .headshots blockquote cite {
   display: block;
   margin-top: 0.5rem;
-  color: #374151; /* darker gray */
-  font-style: normal;
+  color: #374151 !important; /* darker gray */
   font-weight: 600;
 }
 
-
 .headshots {
-    position: relative;
-    margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 30px;
 }
-
 
 /* Lottie / webinar section */
 .lottiefiles {
@@ -142,7 +136,6 @@ img[src*="paragraph-one.jpg"] {
   align-items: center;
 }
 
-
 /* Make the carousel shorter and consistent */
 .carousel,
 #carouselExampleCaptions,
@@ -172,8 +165,18 @@ img[src*="paragraph-one.jpg"] {
   color: #ffffff !important;
 }
 
-/* Footer text color */
-footer, footer * {
-  color: #ffffff !important;   /* change to any color you want */
+/* FOOTER – darker background + white text for contrast */
+footer {
+  background-color: #256b6b !important;  /* darker teal */
 }
 
+/* Keep all footer text and icons white */
+footer,
+footer * {
+  color: #ffffff !important;
+}
+
+/* Underline links for clarity */
+footer a {
+  text-decoration: underline;
+}
