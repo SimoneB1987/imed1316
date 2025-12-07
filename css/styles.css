@@ -136,18 +136,19 @@ margin-bottom: 40px;
   color: #ffffff !important;
 }
 
-/* Lottie / webinar section heading */
-.webinar-title {
-  color: #ffffff;         /* bright white so it shows on blue */
+/* Make sure the webinar heading is visible in the blue section */
+.lottiefiles {
+  padding: 3rem 0;
+}
+
+.lottiefiles .webinar-title {
+  color: #ffffff !important;   /* force white text */
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
-.lottiefiles {
-  padding: 3rem 0;
-}
 
 
 
