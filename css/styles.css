@@ -167,7 +167,7 @@ img[src*="paragraph-one.jpg"] {
 
 /* FOOTER – darker background + white text for contrast */
 footer {
-  background-color: #256b6b !important;  /* darker teal */
+  background-color: #006060 !important;  /* darker teal */
 }
 
 /* Keep all footer text and icons white */
