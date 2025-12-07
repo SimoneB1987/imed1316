@@ -54,7 +54,6 @@ p {
     font-family: var(--fontFamily) !important;
 }
 
-/* Force the Welcome image to a reasonable size */
 .welcome-img {
   width: 100% !important;
   max-width: 400px !important;
@@ -62,7 +61,6 @@ p {
   display: block;
 }
 
-/* Extra safety: target this specific file in case old classes linger */
 img[src*="paragraph-one.jpg"] {
   max-width: 400px !important;
   width: 100% !important;
@@ -96,24 +94,33 @@ img[src*="paragraph-one.jpg"] {
 }
 
 
+/* Lottie / webinar section */
 .lottiefiles {
-  background-color: var(--primaryColor);  
-  padding: 3rem 0;                       
+  background-color: var(--primaryColor);
+  padding: 3rem 0;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
+/* Force all text in this section to be white */
+.lottiefiles * {
+  color: #ffffff !important;
+}
+
+/* Heading styling */
 .lottiefiles .webinar-title {
-  color: #ffffff;          
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
+
+/* Keep the row nicely aligned */
 .lottiefiles .row {
   display: flex;
   align-items: center;
 }
+
 /* Make the carousel shorter and consistent */
 .carousel,
 #carouselExampleCaptions,
