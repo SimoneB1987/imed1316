@@ -84,18 +84,11 @@ img[src*="paragraph-one.jpg"] {
     margin-top: 15px;
     border: 10px solid var(--accentColor) !important;
     border-radius: 50%;
+    border: 8px solid #2f3992
     clip-path: circle(50% at 50% 50%);
     
 }
 
-.photo-frame {
-  border-radius: 50%;
-  border: 6px solid #f4d03f;     /* your yellow ring */
-  box-shadow: 0 0 0 4px #0d1b2a; /* dark navy outline to fix contrast */
-  width: 200px;                  /* keep your circular size */
-  height: 200px;
-  object-fit: cover;
-}
 
 .headshots blockquote {
   color: #111827;  /* dark, accessible text */
