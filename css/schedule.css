@@ -49,6 +49,12 @@
     background-color: #f3f3f3;
 }
 
+/* Make the navbar text white on the Schedule page */
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #ffffff !important;
+}
+
 
 
 
