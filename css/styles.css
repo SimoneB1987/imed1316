@@ -180,3 +180,15 @@ footer * {
 footer a {
   text-decoration: underline;
 }
+
+/* FIX: Make the teal icon band dark enough for white text */
+.blinn-fa-container {
+  background-color: #006060 !important;  /* darker teal so white passes */
+}
+
+/* Keep icons + links white */
+.blinn-fa-icon,
+.blinn-fa-container a {
+  color: #ffffff !important;
+}
+
