@@ -155,3 +155,9 @@ img[src*="paragraph-one.jpg"] {
 .navbar .navbar-brand {
   color: #ffffff !important;
 }
+
+/* Footer text color */
+footer, footer * {
+  color: #ffffff !important;   /* change to any color you want */
+}
+
