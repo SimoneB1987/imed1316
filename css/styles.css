@@ -198,11 +198,6 @@ footer a {
   filter: invert(1) brightness(0.3);  /* turns them dark */
 }
 
-/* Ensure hidden text doesn't trigger contrast errors */
-.visually-hidden {
-  color: transparent !important;
-  background-color: transparent !important;
-}
 
 /* Kill the last contrast errors on the carousel text */
 .carousel-control-prev .visually-hidden,
