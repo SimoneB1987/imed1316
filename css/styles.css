@@ -102,9 +102,13 @@ img[src*="paragraph-one.jpg"] {
   margin-bottom: 40px;
 }
 
-/* Force all text in this section to be white */
-.lottiefiles * {
+/* Make heading + paragraph in this section white and visible */
+.lottiefiles .webinar-title,
+.lottiefiles .webinar-text {
   color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  line-height: 1.4 !important;
 }
 
 /* Heading styling */
@@ -118,8 +122,10 @@ img[src*="paragraph-one.jpg"] {
 /* Keep the row nicely aligned */
 .lottiefiles .row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
+
 
 /* Make the carousel shorter and consistent */
 .carousel,
