@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Houston ELP</title>
+    <title>Register for Free IMG Webinar | Help4Docs</title>
 
     <!-- Bootstrap CDN CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
@@ -11,143 +11,140 @@
     <!-- Font Awesome CDN CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Local CSS -->
-    <link href="css/form.css" rel="stylesheet" />
-
-    <style>
-      h1 {
-        display: none;
-      }
-    </style>
+    <!-- Local CSS (same main styles as your site) -->
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
+
   <body>
     <!-- begin header -->
     <header-component></header-component>
     <!-- end header -->
 
-    <main>
-      <!-- Begin Form -->
-      <div class="web-form">
-        <form class="needs-validation" data-netlify="true" novalidate>
-          <div class="row">
-            <!-- first name -->
-            <div class="col-12 col-xxs-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="firstName" class="form-control" />
+    <main class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <h2 class="mb-3 text-center">Register for Our Free IMG Interview Webinar</h2>
+          <p class="mb-4 text-center">Please complete this short form to save your spot. We’ll send the Zoom link and reminders to the email you provide below.</p>
+
+          <form class="needs-validation" novalidate>
+            <!-- First Name -->
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" name="firstName" required />
+              <div class="invalid-feedback">Please enter your first name.</div>
             </div>
 
-            <!-- last name -->
-            <div class="col-12 col-xxs-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" name="lastName" class="form-control" />
+            <!-- Last Name -->
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" name="lastName" required />
+              <div class="invalid-feedback">Please enter your last name.</div>
             </div>
 
-            <!-- Age - number -->
-            <div class="col-12 col-xxs-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="age">Age</label>
-              <input type="number" name="age" id="age" min="18" max="120" class="form-control" />
+            <!-- Match Year (repurposed from "Age") -->
+            <div class="mb-3">
+              <label for="matchYear" class="form-label">Residency Match Year</label>
+              <input type="number" class="form-control" id="matchYear" name="matchYear" min="2025" max="2030" required />
+              <div class="invalid-feedback">Please enter your Match year (for example, 2026).</div>
             </div>
 
-            <!-- Email - email -->
-            <div class="col-12 col-xxs-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" class="form-control" />
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email (for Zoom link &amp; reminders)</label>
+              <input type="email" class="form-control" id="email" name="email" required />
+              <div class="invalid-feedback">Please enter a valid email address.</div>
             </div>
 
-            <!-- phone -->
-            <div class="col-12 col-xxs-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="phone">Phone</label>
-              <input type="text" name="phone" id="phone" placeholder="(###) ###-####" class="form-control" />
+            <!-- Phone (id="phone" for JS masking) -->
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone (optional)</label>
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="(555) 123-4567" />
+              <div class="form-text">We’ll only use this if there is an issue with your registration.</div>
             </div>
 
-            <!-- Start Date - date -->
-            <div class="col-12 col-xxs-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="start-date">Start Date</label>
-              <input type="date" id="start-date" name="startDate" required class="form-control" />
+            <!-- Preferred Webinar Date (repurposed from "Start Date") -->
+            <div class="mb-3">
+              <label for="startDate" class="form-label">Earliest Date You Can Attend a Webinar</label>
+              <input type="date" class="form-control" id="startDate" name="startDate" />
             </div>
 
-            <!-- Tshirt - Select field -->
-            <div class="col-12 col-xxs-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="t-shirt">T-Shirt Size</label>
-              <select id="t-shirt" required class="form-select">
-                <option value="">Select T-shirt size</option>
-                <option value="XXS">XXS</option>
-                <option value="XS">XS</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-                <option value="XXL">XXL</option>
-                <option value="CUSTOM">CUSTOM</option>
+            <!-- Current Stage (uses id="t-shirt" so JS show/hide still works) -->
+            <div class="mb-3">
+              <label for="t-shirt" class="form-label">Where are you in your IMG journey?</label>
+              <select class="form-select" id="t-shirt" name="currentStage" required>
+                <option value="">Select your current stage</option>
+                <option value="JUST_STARTING">Just starting my Match journey</option>
+                <option value="APPLYING_SOON">Applying in the next cycle</option>
+                <option value="INTERVIEWING">Currently interviewing</option>
+                <option value="REAPPLYING">Reapplying after an unmatched cycle</option>
+                <option value="CUSTOM">Other (please specify)</option>
               </select>
-              <input type="text" id="custom" name="custom" placeholder="Please input a custom size" disabled class="form-control" />
+              <div class="invalid-feedback">Please select your current stage.</div>
             </div>
 
-            <!-- Tshirt Color - Color-->
-            <div class="col-12 col-xxs-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="color">Tshirt Color</label>
-              <input type="color" name="color" id="color" class="form-control form-control-color" />
+            <!-- "Other" text box shown only when CUSTOM is selected (id="custom") -->
+            <div class="mb-3">
+              <label for="custom" class="form-label"> If "Other", please describe your current stage </label>
+              <input type="text" class="form-control" id="custom" name="customStage" style="display: none" disabled />
+              <div class="invalid-feedback">Please describe your current stage.</div>
             </div>
 
-            <!-- Backgroun Check - Upload file -->
-            <div class="col-12 col-xxs-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <label for="background-check">Background Check</label>
-              <input type="file" id="background-check" accept=".pdf" class="form-control" />
+            <!-- Have you attended before? (repurposed from background-type field) -->
+            <fieldset class="mb-3">
+              <legend class="form-label">Have you attended a Help4Docs event before?</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="attendedBefore" id="attendedYes" value="yes" required />
+                <label class="form-check-label" for="attendedYes">Yes</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="attendedBefore" id="attendedNo" value="no" />
+                <label class="form-check-label" for="attendedNo">No</label>
+              </div>
+              <div class="invalid-feedback d-block">Please select an option.</div>
+            </fieldset>
+
+            <!-- Best time(s) of day for live sessions (checkboxes with class timeOfDay) -->
+            <fieldset class="mb-3">
+              <legend class="form-label">Best time(s) of day for live sessions (your time zone)</legend>
+              <div class="form-check">
+                <input class="form-check-input timeOfDay" type="checkbox" id="timeMorning" name="timeOfDay[]" value="morning" />
+                <label class="form-check-label" for="timeMorning">Morning</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input timeOfDay" type="checkbox" id="timeAfternoon" name="timeOfDay[]" value="afternoon" />
+                <label class="form-check-label" for="timeAfternoon">Afternoon</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input timeOfDay" type="checkbox" id="timeEvening" name="timeOfDay[]" value="evening" />
+                <label class="form-check-label" for="timeEvening">Evening</label>
+              </div>
+              <div class="form-text">You can choose more than one. At least one is required.</div>
+            </fieldset>
+
+            <!-- Biggest challenge (textarea) -->
+            <div class="mb-3">
+              <label for="challenge" class="form-label"> What is your biggest interview or communication challenge right now? </label>
+              <textarea class="form-control" id="challenge" name="challenge" rows="4" placeholder="For example: answering behavioral questions, organizing my stories, managing nerves, speaking clearly under pressure..."></textarea>
             </div>
 
-            <!-- Participating In - Radio Buttons -->
-            <div class="col-12 col-xxs-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <strong>Participating In</strong><br />
-
-              <input type="radio" name="participation" id="fashion-show" value="Fashion Show" required class="form-check-input radio" />
-              <label for="fashion-show">Fashion Show</label>
-
-              <input type="radio" name="participation" id="donations" value="Donations" required class="form-check-input radio" />
-              <label for="donations">Donations</label>
-
-              <input type="radio" name="participation" id="expectator" value="Expectator" required class="form-check-input radio" />
-              <label for="expectator">Expectator</label>
+            <!-- Terms checkbox -->
+            <div class="mb-3 form-check">
+              <input class="form-check-input" type="checkbox" id="terms" name="terms" required />
+              <label class="form-check-label" for="terms"> I agree to receive emails about this webinar and future IMG resources from Help4Docs. </label>
+              <div class="invalid-feedback">You must agree before submitting.</div>
             </div>
 
-            <!-- Time of Day - Checkbox Fields -->
-            <div class="col-12 col-xxs-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <strong>Time of Day</strong><br />
-
-              <input type="checkbox" name="timeOfDay" id="time-of-day-morning" value="Morning" required class="form-check-input checkbox timeOfDay" />
-              <label for="time-of-day-morning">Morning</label>
-
-              <input type="checkbox" name="timeOfDay" id="time-of-day-afternoon" value="Afternoon" required class="form-check-input checkbox timeOfDay" />
-              <label for="time-of-day-afternoon">Afternoon</label>
-
-              <input type="checkbox" name="timeOfDay" id="time-of-day-evening" value="Evening" required class="form-check-input checkbox timeOfDay" />
-              <label for="time-of-day-evening">Evening</label>
-            </div>
-
-            <!-- Comments -->
-            <div class="col-12">
-              <label for="about-you">Tell us about you</label><br />
-              <textarea name="about-you" id="about-you" class="form-control"></textarea>
-            </div>
-
-            <!-- Terms and Conditions - Checkbox with toggle switch-->
-            <div class="col-12 form-check form-switch">
-              <input required type="checkbox" name="terms" id="terms-and-conditions" value="Yes" class="form-check-input checkbox" />
-              <label for="terms-and-conditions">I Accept the Terms and Conditions</label>
-            </div>
-
-            <!-- submit button -->
-            <div class="col-12">
-              <input type="submit" id="submit" name="submit" value="Volunteer  Now" class="submit btn btn-primary" />
-            </div>
-          </div>
-        </form>
+            <!-- Submit button (id="submit" for JS) -->
+            <button type="submit" id="submit" class="btn btn-primary">Save My Spot</button>
+          </form>
+        </div>
       </div>
-      <!-- End Form -->
     </main>
 
     <!-- begin footer -->
     <footer-component></footer-component>
     <!-- end footer -->
+
     <section>
       <!-- Bootstrap CDN JS -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -158,7 +155,7 @@
       <!-- Local JS File with Footer -->
       <script src="components/js/footer.js"></script>
 
-      <!-- local js file for form -->
+      <!-- Local JS file for form (your validation & masking) -->
       <script src="js/form.js"></script>
     </section>
   </body>
