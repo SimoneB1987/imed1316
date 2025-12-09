@@ -1,30 +1,21 @@
 @import 'global.css';
 @import 'main.css';
 
+/* Page title */
 .page-title {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 2.5rem;     /* adjust if you want smaller/bigger */
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
-.carousel-caption {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #000000 !important;
-}
-
-/* Reduce carousel height */
-.carousel-item img,
-.carousel-item video {
-  max-height: 400px;   /* try 350–450px to taste */
-  object-fit: cover;   /* keeps image from stretching */
-  width: 100%;
-}
-
+/* Global text */
 p {
   font-family: var(--fontFamily) !important;
 }
+
+/* -------- ICON STRIP (teal band) -------- */
 
 .blinn-fa-icon {
   font-size: 60px;
@@ -35,14 +26,19 @@ p {
   transform: scale(1.1);
 }
 
-.blinn-fa-container a {
+/* Teal band background + padding */
+.blinn-fa-container {
+  background-color: #006060 !important;  /* darker teal so white passes */
+  padding: 50px;
+}
+
+/* Icons + links in teal band stay white */
+.blinn-fa-container a,
+.blinn-fa-icon {
   color: #ffffff !important;
 }
 
-.blinn-fa-container {
-  background-color: var(--secondaryColor) !important;
-  padding: 50px;
-}
+/* -------- INTRO IMAGE / PARAGRAPH -------- */
 
 .paragraph-one {
   position: relative;
@@ -73,12 +69,12 @@ img[src*="paragraph-one.jpg"] {
   margin-top: -5px;
 }
 
-/* Testimonial headshots */
+/* -------- TESTIMONIAL HEADSHOTS -------- */
+
 .cropped {
   width: 250px;
   height: 250px;
   margin-top: 15px;
-  border: 10px solid var(--accentColor) !important;
   border-radius: 50%;
   border: 8px solid #2f3992;
   clip-path: circle(50% at 50% 50%);
@@ -104,7 +100,8 @@ img[src*="paragraph-one.jpg"] {
   margin-bottom: 30px;
 }
 
-/* Lottie / webinar section */
+/* -------- LOTTIE / WEBINAR SECTION -------- */
+
 .lottiefiles {
   background-color: var(--primaryColor);
   padding: 3rem 0;
@@ -136,7 +133,9 @@ img[src*="paragraph-one.jpg"] {
   align-items: center;
 }
 
-/* Make the carousel shorter and consistent */
+/* -------- CAROUSEL SIZE & ARROWS -------- */
+
+/* Base height for the main carousel */
 .carousel,
 #carouselExampleCaptions,
 #carouselExampleCaptions .carousel-inner,
@@ -159,13 +158,53 @@ img[src*="paragraph-one.jpg"] {
   height: 100% !important;
 }
 
-/* Make top-level nav links white */
+/* Darken the carousel arrows so they pass contrast */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) brightness(0.3);  /* turns them dark */
+}
+
+/* (We removed the visually-hidden spans, but this doesn't hurt if something adds them back) */
+.carousel-control-prev .visually-hidden,
+.carousel-control-next .visually-hidden {
+  color: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* -------- CAROUSEL CAPTIONS (FINAL VERSION) -------- */
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.35) !important; /* soft dark overlay */
+  color: #ffffff !important;                        /* white text for contrast */
+  padding: 1rem 1.75rem !important;                 /* comfortable space */
+  border-radius: 8px;                               /* soft corners */
+  max-width: 700px;                                 /* prevents ultra-wide box */
+  margin: 0 auto;                                   /* center horizontally */
+}
+
+/* Caption heading */
+.carousel-caption h5 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+/* Caption paragraph */
+.carousel-caption p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+/* -------- NAVBAR -------- */
+
 .navbar .nav-link,
 .navbar .navbar-brand {
   color: #ffffff !important;
 }
 
-/* FOOTER – darker background + white text for contrast */
+/* -------- FOOTER -------- */
+
 footer {
   background-color: #006060 !important;  /* darker teal */
 }
@@ -180,38 +219,3 @@ footer * {
 footer a {
   text-decoration: underline;
 }
-
-/* FIX: Make the teal icon band dark enough for white text */
-.blinn-fa-container {
-  background-color: #006060 !important;  /* darker teal so white passes */
-}
-
-/* Keep icons + links white */
-.blinn-fa-icon,
-.blinn-fa-container a {
-  color: #ffffff !important;
-}
-
-/* Darken the carousel arrows so they pass contrast */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1) brightness(0.3);  /* turns them dark */
-}
-
-
-/* Kill the last contrast errors on the carousel text */
-.carousel-control-prev .visually-hidden,
-.carousel-control-next .visually-hidden {
-  color: transparent !important;
-  background-color: transparent !important;
-  border: none !important;
-}
-
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.45) !important;
-  padding: 1.5rem !important;
-  border-radius: 6px;
-}
-
-
-
