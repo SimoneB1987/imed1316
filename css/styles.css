@@ -184,7 +184,7 @@ img[src*="paragraph-one.jpg"] {
 }
 
 /* Caption heading */
-.carousel-caption h5 {
+.carousel-caption h2 {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 0.35rem;
