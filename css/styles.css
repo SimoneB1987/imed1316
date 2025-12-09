@@ -219,3 +219,8 @@ footer * {
 footer a {
   text-decoration: underline;
 }
+
+.carousel-caption h2 {
+    color: #ffffff !important;
+}
+
