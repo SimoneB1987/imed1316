@@ -207,4 +207,11 @@ footer a {
   border: none !important;
 }
 
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.45) !important;
+  padding: 1.5rem !important;
+  border-radius: 6px;
+}
+
+
 
